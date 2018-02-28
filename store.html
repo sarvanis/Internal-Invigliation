@@ -1,19 +1,71 @@
 <html>
 <head>
 <title>Store Page</title>
+<script>
+function validateForm() {
+    var IndTim= document.store.timeTable.value;
+	var intDate=document.store.internalDate.value;
+	var timings=document.store.timing.value;
+	var leaveRec=document.store.leaveRecord.value;
+	var s=document.store.registration.value;
+	
+    if (IndTim== "") {
+        alert("Some fields are missing");
+		return false;
+	}
+	if (intDate==" "){
+		alert("Some fields are missing");
+		return false;
+	}
+	if (timings==" "){
+		alert("Some fields are missing");
+		return false;
+	}
+	if (leaveRec==" "){
+		alert("Some fields are missing");
+		return false;
+	}
+	
+	if (timings==" "){
+		alert("Some fields are missing");
+		return false;
+	}
+	if(s==""){
+		alert("Some fields are missing");
+		return false;
+	}
+	
+	
+	
+}
+</script>
 </head>
 <body bgcolor="lightcyan">
 <h2><marquee>&clubs;Store Details&clubs;</marquee></h2>
-<form action="mailto:sowmya0891@gmail.com" method="post">
-<p align="center">Enter Individual Time Table<input type="file" name="timeTable"/></p>
-<p align="center">Enter Internal Timings:</p>
-<p align="center">Choose Date:<input type="date" name="internalDate" min="2018-01-01"/></p>
-<p align="center">Enter Time:<select name="----" size="1">
+<form name="store" onsubmit="return validateForm();" method="post">
+<table align="center" border="0">
+	<tr>
+		<td>Enter Individual Time Table<input type="file" name="timeTable"/></td>
+	</tr>
+	<th>
+		<td>Enter Internal Timings:</td>
+	</th>
+	<tr>
+		<td>Choose Date:<input type="date" name="internalDate" min="2018-01-01"/></td>
+	</tr>
+	<tr>
+		<td>Enter Time:<select name="timing" size="1">
+	
 <option value="am">9:30AM-11:00AM
 <option value="pm">2:00PM-3:30PM
-</select>
-<p align="center">Enter Leave Record:<input type="file" name="leaveRecord"/>
-<p align="center"><input type="submit" name="registration" value="Submit">
+</select></td></tr>
+	<tr>
+		<td>Enter Leave Record:<input type="file" name="leaveRecord"/></td>
+	</tr>
+	<tr>
+<td><input type="submit" name="registration" value="Submit" align="center"></td>
+	</tr>
+	</table>
 </form>
 </body>
 </html>
