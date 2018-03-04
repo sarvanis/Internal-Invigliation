@@ -1,14 +1,18 @@
 <html>
 <head>
-<title>Registration form</title>
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="login.js"></script>
 </head>
-<body bgcolor="lightcyan">
+<body>
 <h2><marquee>&clubs;Welcome to Registration Section&clubs;</marquee></h2>
-<form action="mailto:sowmya0891@gmail.com" method="post">
-<p align="center">Enter Name<input type="text" maxlength="32" size="16">
-<p align="center">Enter User-id<input type="text" maxlength="10" size="16">
-<p align="center">Enter password<input type="password" minlength="8" size="16">
-<p align="center">Re-enter password<input type="password" minlength="8" size="16">
+	<div class="login-page">
+	  <div class="form" >
+		<form action="mailto:sowmya0891@gmail.com" method="post">
+<p align="center">Enter Name<input type="text" placeholder="username" maxlength="32" size="16">
+<p align="center">Enter User-id<input type="text" placeholder="userId" maxlength="10" size="16">
+<p align="center">Enter password<input type="password" placeholder="password" minlength="8" size="16">
+<p align="center">Re-enter password<input type="password" placeholder="password" minlength="8" size="16">
 <p align="center">Enter your Department<select name="----" size="1">
 <option value="CSE">CSE
 <option value="IT">IT
@@ -20,5 +24,6 @@
 </select>
 <p align="center"><input type="submit" name="registration" value="Register">
 </form>
+	  </div>
+	</div>
 </body>
-</html>
