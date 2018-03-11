@@ -49,7 +49,7 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  color: blue;
   text-decoration: none;
 }
 .form .register-form {
@@ -89,7 +89,7 @@
   color: #EF3B3A;
 }
 body {
- background-image: url('b.jpeg');
+ background-image: url('a.png');
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-position: center;
