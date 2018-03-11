@@ -1,10 +1,13 @@
 <html>
 <head>
-<title>Faculty Time</title>
+	<title>Faculty Time</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
-<body><pre>
-	<form method="get" action="">	
-	Faculty ID:<input name="uid" type="text" placeholder="faculty id"/>
+<body>
+     <div class="login-page">
+     <div class="form">
+	<form  method="get" action="">	
+	<p align="center">Faculty ID:<input name="uid" type="text" placeholder="faculty id"/>
    Choose your free timings on each day of the week
 	<select name="Day">
 	<option name="mon" value="mon">Monday </option>
@@ -12,30 +15,30 @@
 	<option name="wed" value="wed">Wednesday</option>
 	<option name="thu" value="thu">Thursday</option>
 	<option name="fri" value="fri">Friday</option>
-	<option name="sat" value="sat">Saturday </option>
+	<option name="sat" value="sat">Saturday </option></p>
 	
    </select>
 		
-	From::<select name="from">
+	<p align="center">From::<select name="from">
 	<option value="9:00 ">9:00 </option>
 	<option value="9:50 ">9:50 </option>
 	<option value="10:40">10:40 </option>
 	<option value="11:30 ">11:30 </option>
 	<option value="2.00">2:00 </option>
 	<option value="2:50">2:50 </option>
-	<option value="3.40 ">3:40 </option>
+	<option value="3.40 ">3:40 </option></p>
    </select>
 	
- 	To::<select name="to">
+ 	<p align="center">To::<select name="to">
 	<option value="9:00 ">9:00 </option>
 	<option value="9:50 ">9:50 </option>
 	<option value="10:40">10:40 </option>
 	<option value="11:30 ">11:30 </option>
 	<option value="2:00 ">2:00 </option>
 	<option value="2:50">2:50 </option>
-	<option value="3:40 ">3:40 </option>
+	<option value="3:40 ">3:40 </option></p>
    </select>
-	<button name="submit" type="submit" value="submit">Submit</button></pre>
+	<p align="center"><button name="submit" type="submit" value="submit">Submit</button></p></div></div>
 </form>
 </body>
 </html>
