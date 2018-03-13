@@ -2,17 +2,24 @@
 <head>
 	<title>register</title>
 	<link rel="stylesheet" type="text/css" href="login.css">
-	<script src="login.js"></script>
+	<script type="text/javascript">
+	function checkForm(form)
+	{
+	 if(form.pwd1.value != form.pwd2.value) {
+		 alert("Error: Password and Confirm Passwoed must be same");
+		}
+	}
+	</script>
 </head>
 <body>
 <h2><marquee>&clubs;Welcome to Registration Section&clubs;</marquee></h2>
 	<div class="login-page">
 	  <div class="form" >
-		<form action="mailto:sowmya0891@gmail.com" method="post">
+		<form method="post">
 <p align="center">Enter Name<input type="text" placeholder="username" maxlength="32" size="16">
 <p align="center">Enter User-id<input type="text" placeholder="userId" maxlength="10" size="16">
-<p align="center">Enter password<input type="password" placeholder="password" minlength="8" size="16">
-<p align="center">Re-enter password<input type="password" placeholder="password" minlength="8" size="16">
+<p align="center">Enter password<input name="pwd1" type="password" placeholder="password" minlength="8" size="16">
+<p align="center">Confirm password<input name="pwd2" type="password" placeholder="password" minlength="8" size="16">
 <p align="center">Enter your Department<select name="----" size="1">
 <option value="CSE">CSE
 <option value="IT">IT
