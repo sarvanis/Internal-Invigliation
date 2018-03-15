@@ -30,11 +30,11 @@
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50;
+  background: blue;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -49,7 +49,7 @@
   font-size: 12px;
 }
 .form .message a {
-  color: #4CAF50;
+  color: blue;
   text-decoration: none;
 }
 .form .register-form {
@@ -89,9 +89,9 @@
   color: #EF3B3A;
 }
 body {
- background-image: url('b.jpg');
+ background-image: url('hi2.jpg');
  background-repeat: no-repeat;
- background-attachment: fixed;
+ background-attachment: scroll;
  background-position: center;
- background-size: 1000px 800px;
+ background-size: 1340px 800px;
 }

@@ -1,8 +1,8 @@
 function validateLogForm()
 {
-	var uname=document.formReg.name.value;
+	var uid=document.formReg.uid.value;
 	var pwd=document.formReg.passwrd.value;
-	if(uname="")
+	if(uid="")
 	{
 		alert("fill user-name");
 		return false;

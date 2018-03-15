@@ -1,41 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+	
 <html>
 <head>
-<title>Faculty Time</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
-<body><pre>
-	<form method="get" action="">	
-	Faculty ID:<input name="uid" type="text" placeholder="faculty id"/>
-   Choose your free timings on each day of the week
-	<select name="Day">
-	<option name="mon" value="mon">Monday </option>
-	<option name="tue" value="tue">Tuesday </option>
-	<option name="wed" value="wed">Wednesday</option>
-	<option name="thu" value="thu">Thursday</option>
-	<option name="fri" value="fri">Friday</option>
-	<option name="sat" value="sat">Saturday </option>
-	
-   </select>
-		
-	From::<select name="from">
-	<option value="9:00 ">9:00 </option>
-	<option value="9:50 ">9:50 </option>
-	<option value="10:40">10:40 </option>
-	<option value="11:30 ">11:30 </option>
+<body>
+
+<h2 align="center" style="color:red">Faculty Details<h2>
+<form method="post" action="faculty.php" align="center">
+ 
+
+  <table align="center"background=images.jpeg">
+   <tr><td> <label><b>Name</b></label></td>
+    <td><input type="text" placeholder="Enter Faculty name" name="fname" required><br><br></td></tr>
+
+    <tr><td><label><b>ID</b></label></td>
+    <td><input type="text" placeholder="Enter id" name="fid" required><br><br></td></tr>
+
+    <tr><td><label><b>Time:</b></label></td>
+     <td><label>From</label></td>
+  <td><select name="frm">
+	<option value="9.00 ">9:00 </option>
+	<option value="9.50 ">9:50 </option>
+	<option value="10.40">10:40 </option>
+	<option value="11.30 ">11:30 </option>
+	<option value="12.20 ">12:20 </option>
+	<option value="1.10 ">1:10 </option>
 	<option value="2.00">2:00 </option>
-	<option value="2:50">2:50 </option>
-	<option value="3.40 ">3:40 </option>
-   </select>
+	<option value="2.50 ">2:50 </option>
+   </select></td></tr>
+<tr>
+<td></td>
+<td><label>till</label></td>
+  <td><select name="till">
 	
- 	To::<select name="to">
-	<option value="9:00 ">9:00 </option>
-	<option value="9:50 ">9:50 </option>
-	<option value="10:40">10:40 </option>
-	<option value="11:30 ">11:30 </option>
-	<option value="2:00 ">2:00 </option>
-	<option value="2:50">2:50 </option>
-	<option value="3:40 ">3:40 </option>
-   </select>
-	<button name="submit" type="submit" value="submit">Submit</button></pre>
+	<option value="9.50 ">9:50 </option>
+	<option value="10.40 ">10:40 </option>
+	<option value="11.30 ">11:30 </option>
+	<option value="12.20 ">12:20 </option> 
+	<option value="1.10 ">1:10 </option>
+	<option value="2.00 ">2:00 </option>
+	<option value="2.50 ">2:50 </option>
+	<option vaalue="3.40">3.40</option>
+   </select><br><br></td></tr>
+    <tr><td><label>day</label></td>
+	<td><input type="text" name="fday"></td></tr>
+<!--
+   <tr><td><label><b>Year</b></label></td>
+   <td> <input type="text" placeholder="example :III-A" name="yr" required><br><br></td></tr>
+-->     
+   <tr> <td></td><td><button type="submit">Submit</button></td></tr>
+   <tr><td></td></tr></br>
+  
+
+
+ 
 </form>
+
+
+
 </body>
+
+
 </html>

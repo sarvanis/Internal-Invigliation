@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="login.css"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="login.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+
+
+
+
+<style>
+
+
+input[type=text], input[type=password] {
+   
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+   
+}
+</style>
+</head>
+<body>
+   
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+   <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script 
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+--> 
+
+<form  method="post" action="admin.php" align="center">
+ 
+<h2 align="center" style="color:red">EXAMDETAILS</h2>
+  <table align="center">
+    <tr><td><label><b>Exam-Date</b></label></td>
+    <td><input type="date" id="date" name="edate" required><br><br></td></tr>
+
+    <tr><td><label><b>Exam-Day</b></label></td>
+   <td> <select name= "day">
+	<option value="Monday">Monday</option>
+	<option value="Tuesday">Tuesday</option>
+	<option value="Wednesday">Wednesday</option>
+	<option value="Thursday">Thrusday</option>
+	<option value="Friday">Friday</option>
+	<option value="Saturday">Saturday</option>
+	</select><br><br></td></tr>
+   
+
+  <!--  <tr><td><label><b>Room availability</b></label><br></td>
+    <td><input type="checkbox" name="cs1" value="cs1">cs1
+    <input type="checkbox" name="cs2" value="cs2">cs2
+    <input type="checkbox" name="cs3" value="cs3">cs3
+    <input type="checkbox" name="cs4" value="cs4">cs4
+    <input type="checkbox" name="cs5" value="cs5">cs5
+    <input type="checkbox" name="cs6" value="cs6">cs6
+    <input type="checkbox" name="cs7" value="cs7">cs7
+    <input type="checkbox" name="cs8" value="cs8">cs8
+    <input type="checkbox" name="cs9" value="cs9">cs9
+    <input type="checkbox" name="cs10" value="cs10">cs10
+    <input type="checkbox" name="cs11" value="cs11">cs11
+    <input type="checkbox" name="cs12" value="cs12">cs12
+    <input type="checkbox" name="dh" value="dh">drawing hall<br><br></td></tr>
+-->
+   <tr><td> <label><b>Time</b></label></td>
+	<td><select name="tm">
+	<option value="9.30">9.30</option>
+	
+	</select><br><br></td></tr>
+<tr><td><label><b>TillTime</b></label></td>
+	<td><select name="tt">
+	<option value="11.00">11.0</option>
+	
+	</select><br><br></td></tr>
+
+        
+    <tr><td ></td><td><button type="submit">Submit</button></td></tr>
+    
+
+
+  
+</form>
+
+<form method="post" action="uselect.php">
+<tr><td> </td><td><button type="submit">Fetch</button></td></tr>
+</form>
+<form method="post" action="display.php">
+<tr><td> </td><td><button type="submit">Display</button></td></tr>
+</form>
+    </table>
+
+</body>
+</html>

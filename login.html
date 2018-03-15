@@ -3,14 +3,22 @@
 	<title>Log In</title>
 	<link rel="stylesheet" type="text/css" href="login.css">
 	<script src="login.js"></script>
+<style>
+body {
+ background-image: url('hi2.jpg');
+ background-repeat: no-repeat;
+ background-attachment: scroll;
+ background-position: center;
+ background-size: 1340px 800px;
+}</style>
 </head>
 <body>
 	<div class="login-page">
 	  <div class="form">
-		<form class="login-form" name="formReg" onsubmit="validateLogForm();">
-		  <input name="name" type="text" placeholder="username"/>
-		  <input name="passwrd" type="password" placeholder="password"/>
-		  <button name="login" type="submit" value="submit">login</button>
+		<form class="login-form" name="formReg" onsubmit="validateLogForm();" action="login.php" method="post">
+		  <input name="uid" type="text" placeholder="user-id"/>
+		  <input name="pwd" type="password" placeholder="password"/>
+		  <button name="submit" type="submit" value="submit">login</button>
 		  <p class="message">Not registered? <a href="register.html">Create an account</a></p>
 		</form>
 	  </div>
